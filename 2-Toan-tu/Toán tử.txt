@@ -1,0 +1,25 @@
+Bài 1: Thực hiện các phép toán sau:
+a.	(8 + "10" + "11" - "12" + "13" + "14" + 10);
+b.	("1" + "2" + 3 - 4  + 5 * "6" + "7" + "8" + "9" + 10 * 0)
+Bài 2: var x = 2
+a.	var a = 8 + x++ + ++x - --x + x++ + 7
+b.	var b = 5 + ++x + ++x + --x - x-- - ++x  + 10
+c.	var c = 1 + x-- + --x - ++x + --x - 11
+a,b,c có giá trị là bao nhiêu ?
+Bài 3: var x = 5
+a.	var a = 5 + x++ + 10
+b.	var b = 5 + ++x +10
+c.	var c = 5 + x-- + 10
+d.	var d = 5 + --x +10
+a, b, c, d có giá trị là bao nhiêu?
+Bài 5: var a = 10; var b = a++; var  c = ++b; var d = --c;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+Bài 6: Viết chương trình nhập vào giá trị
+dùng prompt trên web console
+a.	Nếu giá trị nhập vào là Employee thì hiển thị chuỗi Hello.
+b.	Còn lại nếu giá trị nhập vào là Director thì hiển thị chuỗi Greetings
+c.	Còn lại nếu giá trị nhập vào chuỗi rỗng thì hiển thị No login
