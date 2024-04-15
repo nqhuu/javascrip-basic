@@ -1,0 +1,52 @@
+//  bai_1
+console.log(`BootCamp4 thực hành buổi 14`);
+console.log(12356);
+var Name = "thuy duong";
+var age = "33";
+var add = "hung yen";
+console.log(`Ten toi la ` + Name + `, toi ` + age +` tuoi, ` + `toi dang o ` + add);
+//  bai_2
+var women = {
+    name :" thuy duong",
+    age : 33,
+    interest : "cay phim",
+    ethnic: "kinh"
+}
+console.log(women.name);
+console.log(women.age);
+console.log(women.interest);
+console.log(`so thich cua` + women.name + ` la ` + women.interest);
+//  bai_3
+var user = {
+    ten: "tung",
+    tuoi : 30 ,
+    ho: "nguyen"
+}
+console.log(user.ten);
+console.log(user.tuoi);
+delete user.tuoi;
+console.log(user);
+//bai_4
+var monthSalary = {
+    January:    1000,
+    February:   4000,
+    March:      5400,
+    April:      6040,
+    May:        1700,
+    June:       1000,
+    July:       8000,
+    August:     1600,
+    September:  1000,
+    October:    1700,
+    November:   1903,
+    December:   9050
+}
+console.log(monthSalary.January + monthSalary.February + monthSalary.March);
+monthSalary.moth13 = 15000;
+
+var totalsalary = 0;
+for (var key in monthSalary){
+    totalsalary += monthSalary[key];
+}
+var length = Object.keys(monthSalary).length;
+console.log(totalsalary/length);
