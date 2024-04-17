@@ -1,0 +1,27 @@
+//bài 6
+<head>
+    <title>
+        Vũ Thị Thùy Dương
+    </title>
+<script>
+
+var giatri = "aa"
+giatri = prompt("Nhập giá trị nhé:")
+if (giatri === "Employee") {
+    document.write("Hello");
+} else if (giatri === "Director") {
+    document.write("Greetings");
+} else {
+    document.write("No login");
+}</script>
+
+
+</head>
+
+// bài 1 
+var a = (8 + "10" + "11" - "12" + "13" + "14" + 10);
+console.log(a);
+
+var b = ("1" + "2" + 3 - 4  + 5 * "6" + "7" + "8" + "9" + 10 * 0);
+console.log(b);
+// đáp án a = 80999131410, đáp án của b = 1497890 => không hiểu
