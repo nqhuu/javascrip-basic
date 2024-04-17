@@ -1,0 +1,108 @@
+//  bai_1
+console.log(`BootCamp4 thực hành buổi 14`);
+console.log(12356);
+var Name = "thuy duong";
+var age = "33";
+var add = "hung yen";
+console.log(`Ten toi la ` + Name + `, toi ` + age +` tuoi, ` + `toi dang o ` + add);
+//  bai_2
+var women = {
+    name :" thuy duong",
+    age : 33,
+    interest : "cay phim",
+    ethnic: "kinh"
+}
+console.log(women.name);
+console.log(women.age);
+console.log(women.interest);
+console.log(`so thich cua` + women.name + ` la ` + women.interest);
+//  bai_3
+var user = {
+    ten: "tung",
+    tuoi : 30 ,
+    ho: "nguyen"
+}
+console.log(user.ten);
+console.log(user.tuoi);
+delete user.tuoi;
+console.log(user);
+//bai_4
+var monthSalary = {
+    January:    1000,
+    February:   4000,
+    March:      5400,
+    April:      6040,
+    May:        1700,
+    June:       1000,
+    July:       8000,
+    August:     1600,
+    September:  1000,
+    October:    1700,
+    November:   1903,
+    December:   9050
+}
+console.log(monthSalary.January + monthSalary.February + monthSalary.March);
+monthSalary.moth13 = 15000;
+
+var totalsalary = 0;
+for (var key in monthSalary){
+    totalsalary += monthSalary[key];
+}
+var length = Object.keys(monthSalary).length;
+console.log(totalsalary/length);
+
+//bài 5.1
+
+var x = [1,3,5];
+x[0] = x[2]
+console.log(x);
+x[1] = x[0]
+console.log(x);
+
+// bài 5.2
+
+var x = [1,3,5];
+var y = [0,5,7];
+x[0] = x[1] + y[2];
+y[1] = y[2] - x[0];
+console.log(x, y); 
+
+// bài 5.3
+var x = [1,3,5,8];
+x[0] = x[x.length-1];
+console.log(x);
+//bài 5.4
+var x = [1,3,5,8];
+var temp = x[x.length-1];   // = 8
+x[x.length-1] = x[0];       // x[3] = 1
+x[0] = temp;                // x[0] = 8
+console.log(x);             // 8,3,5,1
+
+// bài 6
+array = [1,6,8,7,6,9]
+console.log(array.length);
+console.log(array[0]);
+console.log(array[array.length - 1]);
+array.push(5);
+console.log(array);
+array[0] = 10;
+array[array.length - 1] = 10;
+console.log(array);
+
+//bài 7
+// tính tổng đầu cuối của array cha
+array = [1,6,8,7,10 , [6,8,7,4,3,5] , 3]
+console.log(`tong dau cuoi array cha la: ${array[0] + array[array.length - 1]}`);
+// tính tổng đầu cuối của array con
+// dùng vòng lặp để lấy được các phần tử trong arraay con, sau đó làm gì nhỉ
+function tinhtong (x){
+    var phantudau = x[0];
+    var phantucuoi = x[x.length - 1];
+    var sum = phantudau + phantucuoi;
+    return sum;
+}
+for ( i = 0 ; i < array.length ; i++ ){
+    if (Array.isArray(array[i])){
+        console.log(`tong dau cuoi array con la: ${tinhtong(array[i])}`);
+    }
+};
