@@ -1,0 +1,34 @@
+
+// bài 9 cách 1
+
+array = [3,5,4,9,8,1,10]
+var tongdaucuoi = array[0] + array[array.length-1]
+document.write(tongdaucuoi)
+array.push(20)
+var tongdaucuoi = array[0] + array[array.length-1]
+document.write(tongdaucuoi)
+
+
+// bài 9 cách 2 :
+array = [3,5,4,9,8,1,10]
+function tinhtong (x){
+   var phantudau = x[0];
+   var phantucuoi = x[x.length - 1];
+   var tongdaucuoi = phantudau + phantucuoi;
+   return tongdaucuoi;
+}
+document.write(tinhtong(array));
+
+
+// bài 10
+password = prompt("Nhập pass dạng string:")
+if(password == "" ){
+    document.write("password không để trống")
+}
+else if (password.length < 8 | password.length > 16){
+    document.write("password không hợp lệ")
+}
+else {
+    document.write("password hợp lệ")
+
+}

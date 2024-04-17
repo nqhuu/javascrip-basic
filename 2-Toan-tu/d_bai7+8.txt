@@ -1,0 +1,38 @@
+// bài 7
+giatri2 = parseInt(prompt( "Nhập số a:"))
+giatri3 = parseInt(prompt( "Nhập số b:"))
+var tong = giatri2 + giatri3 >= 4 ? "Below" : "Over" ;
+document.write(tong)
+
+// bài 8
+ nhietdo = prompt("Nhập nhiệt độ hiện tại:")
+ if(nhietdo < 20 ){
+    confirm("Thông báo tăng nhiệt độ");
+ } else if(nhietdo > 100 ){
+    confirm("Thông báo giảm nhiệt độ");
+ } else {
+    confirm("Nhiệt độ đủ dùng");
+ }
+// dùng toán tử 3 ngôi để ngắn gọn hơn:
+nhietdo = parseInt(prompt("Nhập nhiệt độ hiện tại:"));
+var d0c = nhietdo < 20 ? "Cần tăng nhiệt độ" :
+         nhietdo > 100 ? "Cần giảm nhiệt độ" :
+         "Nhiệt độ đủ dùng";
+document.write(d0c)
+confirm(d0c)
+// đáp án cho sẵn
+
+let DO = prompt("Độ C");
+let KiemTraNhietDo = (DO) => {
+    return (DO < 20) ? "Nhiệt độ đang nhỏ hơn 20, cần tăng nhiệt độ" : (DO > 100) ? "Nhiệt độ đang lớn hơn 100, cần giảm nhiệt độ": "Nhiệt độ đủ dùng" 
+}
+confirm(KiemTraNhietDo(DO))
+
+// bài 9 cách 1
+
+array = [3,5,4,9,8,1,10]
+var tongdaucuoi = array[0] + array[array.length-1]
+document.write(tongdaucuoi)
+array.push(20)
+var tongdaucuoi = array[0] + array[array.length-1]
+document.write(tongdaucuoi)
