@@ -1,0 +1,39 @@
+//Bài 0: Sắp xếp mảng theo thứ tự tăng và giảm dần
+// sử dụng arrow function
+var arr = [1,4,5,3,7,9,4]
+var tangdan = arr.sort((a, b) => a - b);
+console.log(`Thứ tự tăng dần của mảng arr là:${arr}`);
+var giadan = arr.sort((a, b) => b - a);
+console.log(`Thứ tự giảm dần của mảng arr là:${arr}`);
+
+// bài 1 : Bài tập về vòng lặp
+array = [1,5,7,8,9,15,8]
+//   in ra so chan : chia cho 2 du 0 thi in ra
+for (var i = 0 ; i < array.length ; i++ )
+if (array[i] % 2 == 0){
+    console.log(`Các số chẵn của mảng là: ${array[i]}`)
+}
+
+//  in ra so le : chia cho 2 co du ma true thi in ra
+for (var i = 0 ; i < array.length ; i++)
+if (array[i] % 2 == true ){
+    console.log(`Các số lẻ của mảng là: ${array[i]}`)
+}
+//  in ra số >= 5  : 
+for (var i = 0 ; i < array.length ; i++)
+if (array[i] >= 5){
+    console.log(`Các số trong mảng lớn hơn hoặc bằng 5 là: ${array[i]}`)
+}
+//  Cộng tổng các số chia hết cho 5 của mảng
+
+function total(array){
+    var sum = 0;
+for (var i = 0 ; i < array.length ; i++){
+    if (array[i] % 5 == 0){
+    sum += array[i];
+    }
+}
+return sum;
+}
+console.log(`Tổng các số chia hết cho 5 trong mảng là: ${total(array)}`);
+ // Tìm ra tích 3 số đầu của mảng
