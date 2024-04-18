@@ -1,0 +1,14 @@
+Bài 0: Cho mảng arr = [1, 4, 5, 2, 7, 9, 4].
+Hãy sắp xếp mảng theo thứ tự tăng dần và giảm dần
+
+
+
+Bài 1: cho array = [1,5,7,8,9,15,8]
+a.	in ra các số chẵn của mảng
+b.	in ra các số lẻ của mảng
+c.	in ra các số lớn hơn hoặc bằng 5 của mảng
+d.	 Cộng tổng các số chia hết cho 5 của mảng
+e.	Tìm ra tích 3 số đầu của mảng array
+f.	Tính tổng 3 phần tử cuối của mảng
+g.	Tìm xem trong array có phần tử nào là số 5 không?
+h.	Đếm số phần tử = 8 trong mảng
