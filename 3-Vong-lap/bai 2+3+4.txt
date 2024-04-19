@@ -1,0 +1,17 @@
+Bài 2: cho var data = [3,2,4,1,8,7,1,10,1,2]
+a.	tính tổng các phần tử trong array
+b.	tính tích các phần từ trong array
+c.	tính tổng các số lẻ trong array
+d.	tính tích các số chẵn trong array
+e.	có mấy số 1 trong array, ở những vị trí nào
+f.	số 1 đầu tiền và số 1 cuối cùng ở vị trí nào trong array
+
+
+Bài 3: cho var data = [3,2,4,'5',1,8,7,'9']
+a.	tính tổng các phần tử trong array trên
+b.	hãy tạo ra array2 chứa các phần tử có giá trị lẻ của data
+c.	hãy tạo ra array3 chứa các phần tử của data theo thứ tự  đảo ngược 
+// kết quả [ '9', 7, 8, 1, '5', 4, 2, 3]
+
+Bài 4: Cho 1 số tự nhiên n. Viết chương trình kiểm tra n là số lẻ hay chẵn.
+Nếu number là số chẵn , In ra "Even number" và "Done".Ngược lại, in "Done" ra màn hình.
