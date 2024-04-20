@@ -16,8 +16,15 @@ console.log(elementLe);
 // c.	hãy tạo ra array3 chứa các phần tử của data theo thứ tự  đảo ngược
 // kết quả [ '9', 7, 8, 1, '5', 4, 2, 3]
 
+// cách 1 dùng hàm for
+
 let daoNguoc = []
 for (i = data.length - 1; i < data.length && i > -1; i--) {
     daoNguoc.push(data[i])
 }
 console.log(daoNguoc);
+
+//  cách 2 sử dụng hàm reverse()
+
+let daoNguoc2 = data.reverse();
+console.log(daoNguoc2);
