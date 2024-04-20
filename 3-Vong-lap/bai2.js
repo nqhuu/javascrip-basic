@@ -34,7 +34,7 @@ console.log(tichSoChan)
 let searchNumber = 1
 let count = 0;
 let arrayIndex = [];
-// hàm fillter sẽ chỉ trả về giá trị của mảng thỏa mã điều kiện chứ ko trả về index của các phần từ đó
+// hàm fillter sẽ chỉ trả về giá trị của mảng thỏa mã điều kiện chứ ko trả về index của các phần từ đó nên ta sử dụng forEach
 data.forEach((element, index) => {
     if (element === searchNumber) {
         count++;
