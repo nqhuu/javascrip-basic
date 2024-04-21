@@ -1,0 +1,59 @@
+// bài 2 
+ let data = [3,2,4,1,8,7,1,10,1,2]
+// a.	tính tổng các phần tử trong array
+let totala = 0;
+for (let i = 0 ; i < data.length ; i++)
+    totala += data[i];
+    console.log(`Tổng các phần tử trong mảng data là: ${totala}`);  
+
+// dùng for of
+for (let a of data){
+    totala += a
+}
+console.log(`Tổng các phần tử trong mảng data là:${totala}`);
+  
+// b.	tính tích các phần từ trong array
+let product = 1;
+for(let b of data){
+    product *= b
+}
+console.log(`Tích các phần tử trong mảng data là:${product}`);
+// c.	tính tổng các số lẻ trong array ( dùng for of sai chỗ nào mà ra kqua sai nhỉ ,ketqua = 1)
+
+let sumle = 0;
+for(let c of data) {
+if (c % 2 == true) {
+    sumle =+ c ;
+    }
+}
+    console.log(`Tổng các số lẻ trong data là:${sumle}`);
+
+let sumle1 = 0;
+for (let i = 0 ; i < data.length ; i++) {
+if (data[i] % 2 == true) {
+    sumle1 += data[i];
+    }
+}
+console.log(`Tổng các số lẻ trong data là:${sumle1}`);
+// d.	tính tích các số chẵn trong array
+let productchan = 1;
+for (let i = 0 ; i < data.length ; i++) {
+if (data[i] % 2 == false) {
+    productchan *= data[i];
+    }
+}
+console.log(`Tích các số chắn trong data là:${productchan}`);
+// e.	có mấy số 1 trong array, ở những vị trí nào / chưa làm được
+let demso1 = 0;
+for(let i = 0 ; i < data.length ; i++){
+    if(data[i] === 1){
+    demso1 += 1;
+    }
+}
+console.log(`Trong mảng có ${demso1} số 1`);
+
+
+// f.	số 1 đầu tiền và số 1 cuối cùng ở vị trí nào trong array
+let checkso1dau = data.indexOf(1);
+console.log(`Số 1 đầu tiên trong mảng ở vị trí số :${checkso1dau}`);
+console.log(`Số 1 cuối trong mảng ở vị trí số :${data.lastIndexOf(1)}`);

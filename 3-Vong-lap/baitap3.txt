@@ -1,0 +1,12 @@
+//bài 3
+var data3 = [3,2,4,'5',1,8,7,'9']
+// a.	tính tổng các phần tử trong array trên (ban đầu chuyển sang dạng số từ ngay trong vòng lặp ra đáp án sai)
+let tong3 = 0;
+for(let i = 0 ; i < data3.length ; i++) {
+    tong3 += parseInt(data3[i]);
+}
+console.log(`Tổng các phần tử trong array trên là: ${tong3}`);
+
+
+// b.	hãy tạo ra array4 chứa các phần tử có giá trị lẻ của data ( Dùng lọc, chưa học để làm sau)
+// c.	hãy tạo ra array5 chứa các phần tử của data theo thứ tự  đảo ngược 
