@@ -34,5 +34,5 @@ while (!check ) {
 }
 
 
-// let a = 'a'
-// console.log(!isNaN(a) + ' ' + a); 
+let a = 'a'
+console.log(!isNaN(a) + ' ' + a); 

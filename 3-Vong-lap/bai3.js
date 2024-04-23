@@ -4,6 +4,7 @@ let data = [3, 2, 4, '5', 1, 8, 7, '9']
 
 let sumAll = data.reduce((prev, current) => {
     let item = +current;
+    console.log(item);
     return prev + item
 }, 0)
 console.log(sumAll);
@@ -19,7 +20,7 @@ console.log(elementLe);
 // cách 1 dùng hàm for
 
 let daoNguoc = []
-for (i = data.length - 1; i < data.length && i > -1; i--) {
+for (i = data.length - 1; i >= 0 ; i--) {
     daoNguoc.push(data[i])
 }
 console.log(daoNguoc);
