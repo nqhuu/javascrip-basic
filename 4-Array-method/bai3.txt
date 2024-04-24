@@ -1,0 +1,15 @@
+// Bài 3 :
+const persons = [{firstname : "Đào", lastname: "Văn Anh"},
+{firstname : "Trần", lastname: "Huy"},
+{firstname : "Lê", lastname: "Hoàng"}]; 	
+// a ) Tạo ra một array persons mới . (newPersons)
+newPersons = persons;
+console.log(newPersons);
+// a ) Thêm mới 1 object  {firstname : "Đào", lastname: "Văn Anh"} vao newPerosns
+let object = {firstname : "Đào", lastname: "Văn Anh"}
+newPersons.push(object)
+console.log(newPersons);
+// b) Đổi {firstname : "Trần", lastname: "Huy"}  thành {firstname : "Nguyễn", lastname: "Hoàng"}.
+newPersons.splice(1,1,{firstname : "Nguyễn", lastname: "Hoàng"}); // không nên dùng index là số 1 như kia, có cách nào ko?
+console.log(newPersons);
+// c ) Áp dụng map thêm key address:"Hà Nội"  vào mỗi value của array persons

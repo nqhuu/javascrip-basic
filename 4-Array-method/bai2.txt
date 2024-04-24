@@ -1,0 +1,22 @@
+// Bài 2 :
+let data03 = ['Cam','Xoài','Mít','Bưởi','Quýt','Dưa gang']
+// a ) Copy array data03. Bằng... ( là Spread)
+let copydata03 = [...data03];
+console.log(copydata03);
+
+// b )  Sửa phần tử “Dưa gang” thành “Dưa hấu” - splice
+data03.splice(data03.length-1,1,"Dưa hấu");
+console.log(data03);
+
+// c ) Thêm “mận” vào giữa data03 . 
+data03.splice(data03.length-data03.length/2,0,"Mận");
+console.log(data03);
+
+// d ) Thêm “Dứa” vào đầu của data03 và “Chanh”  vào cuối data03 . 
+data03.unshift("Dứa");
+data03.push("Chanh");
+console.log(data03);
+//hoặc
+data03.unshift("Dứa");
+data03[data03.length] = ("Chanh");
+console.log(data03);
