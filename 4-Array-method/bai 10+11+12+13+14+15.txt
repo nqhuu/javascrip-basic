@@ -1,0 +1,46 @@
+Bài 10: Cho array2 = [1,4,2,4,5,7,8,3,6,4,9,1,6,5];
+a.	Xóa phần tử cuối cùng và in lại array
+b.	Thêm giá trị 12 vào đầu của array và in ra dãy array sau khi thêm 
+c.	Hãy xóa phần tử ở vị trí thứ 2 đến vị trí thứ 5 của array và in ra kết quả
+d.	Hãy in ra các giá trị tại vị trí từ thứ 3 đến thứ 7 của array
+
+Bài 11: Cho array3 = [1,4,2,4,5,7,8,3,6,4,9,1,6,5,4,3,8,9];
+a.	Tạo newArray chứa các giá trị chẵn của array3 (Áp dụng filter )
+b.	Tạo newArray2 chứa các giá trị lẻ của array3 và có giá trị lớn hơn 3.
+Bài 12: Cho array1 = [1,5,2,6,2,8,9,4,6,2,3,5,7,9,3,2,75,6,4,3,7,5,2,4,13];
+a.	Hãy in ra vị trí đẩu tiên xuất hiện số 7
+b.	Hãy in ra vị trí cuối cùng xuất hiện số 7
+c.	Hãy sắp xếp array1 theo thứ tự tăng dần và giảm dần
+d.	Sử dụng hàm filter để tạo ra array2 từ array1 chứa các phần tử có giá trị lớn hơn 5
+e.	 Sử dụng hàm filter để tạo ra 1 array3 chứa các giá trị thỏa mãn các điều kiện sau: là lớn hơn 5 và phần tử đó cộng 2 chia hết cho 3
+
+Bài  13:    
+var  hoaQua = [
+	{ten:”Xoài”,sx:”China”,sl:”100”},
+	{ten:”Xoài”,sx:”VietNam”,sl:”130”},
+	{ten:”Xoài”,sx:”ThaiLan”,sl:”100”},
+	{ten:”Cam”,sx:”China”,sl:”200”},
+{ten:”Cam”,sx:”ThaiLan”,sl:”150”},
+{ten:”Nho”,sx:”VietNam”,sl:”120”},
+{ten:”Xoài”,sx:”ThaiLan”,sl:”100”},
+]
+a.	Áp dụng filter lọc các trái cây có nơi sản xuất tại VietNam . 
+b.	Áp dụng  filter lọc các trái cây có số lượng (sl) > = 150 . 
+c.	Viết function lọc sản phẩm hoa quả  theo tên  .  
+d.	Viết function lọc sản phẩm hoa quả  theo Nước .   
+
+Bài 14: Cho arr = [1,4,2,5,7,2,8,'23',3,8,6,'a',3,9,'d',"c",11,'f','r',35,'g','b',42,'k','j','h','11'] 
+a.	Hãy chia arr trên thành 2 array nhỏ theo kiểu dữ liệu khác nhau và sắp xếp theo thứ tự tăng dần .
+b.	Hãy tính tổng của các giá trị number và các string number trong arr
+c.	Hãy sắp xếp arr chứa các phần tử số trên theo thứ tự tăng dần.
+d.	Hãy lấy các giá trị có thuộc tính là number từ arr và kiểm tra xem các số đó có phải là số nguyên tố hay không . 
+
+  
+Bài 15: var data = [1,2,3,1,2,3,4,5,6,5,4,6,3]
+hãy cho biết các phần tử trong array trên lặp lại bao nhiêu lần
+// kết quả: [
+{phanTu: 1, lapLai: 2},
+	{phanTu: 2, lapLai: 2},
+	{phanTu: 3, lapLai: 3},
+	……
+]
