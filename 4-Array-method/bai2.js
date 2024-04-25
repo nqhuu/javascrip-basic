@@ -1,5 +1,5 @@
 // Bài 2 :
-let data03 = ['Cam', 'Xoài', 'Mít', 'Bưởi', 'Quýt', 'Dưa gang']
+let data03 = ['Cam', 'Xoài','Dưa gang', 'Mít', 'Bưởi', 'Quýt', 'Dưa gang']
 
 // a ) Copy array data03. Bằng  …
 
