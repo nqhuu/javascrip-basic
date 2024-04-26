@@ -22,28 +22,39 @@ var hoaQua = [
 
 let findName = (name, fruit) => {
     let check = false;
+    let ketQua = [];
+    let khongCoHang = []
     while (!check) {
         let fruitName = fruit.filter(item => item.ten.toUpperCase() === name)
-        console.log(fruitName)
         if (fruitName.length === 0) {
-            confirm('hoa quả bạn tìm hiện không có trên hệ thống bạn có muốn chọn lại')
-            console.log(confirm);
-            if (!confirm) {
-                alert('Cảm ơn bạn đã ghé thăm gian hàng')
+            let returnUser = confirm('hoa quả bạn tìm hiện không có trên hệ thống bạn có muốn chọn lại')
+            if (!returnUser) {
+                // alert('Cảm ơn bạn đã ghé thăm gian hàng')
+                khongCoHang.push('Cảm ơn bạn đã ghé thăm gian hàng')
                 check = true;
                 // break;
-            } else if (confirm) {
+            } else {
                 name = prompt('tìm hoa quả').trim().toUpperCase()
             }
         } else {
             check = true;
-            return fruitName.join()
+            ketQua = fruitName;
         }
+    }
+
+    if (ketQua.length > 0) {
+        return ketQua;
+    } else {
+        return khongCoHang
     }
 }
 let input = prompt('tìm hoa quả').trim().toUpperCase()
 let showFruit = findName(input, hoaQua);
-console.log(showFruit);
-
+console.log(`${showFruit}`);
+// if (showFruit.length !== 0) {
+//     Object.keys(showFruit).forEach(element => {
+//         console.log(`sản xuất tại: ${element.sx}, số lượng trong kho: ${element.sl} `)
+//     });
+// };
 
 // d.	Viết function lọc sản phẩm hoa quả  theo Nước .   
