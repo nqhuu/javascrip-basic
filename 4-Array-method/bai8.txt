@@ -1,0 +1,8 @@
+// Bài 8: cho arr [1,8,5,2,7,6,9,2,6]
+// dùng .sort để sắp xếp mảng tăng dần và giảm dần
+let arr8 = [1,8,5,2,7,6,9,2,6]
+
+let tangdan = arr8.sort((a, b) => a - b);
+console.log(tangdan);
+let giamdan = arr8.sort((a, b) => b - a );
+console.log(giamdan);

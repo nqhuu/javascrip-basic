@@ -1,0 +1,51 @@
+// Bài 7: cho  array = [1,5,7,8,9,15] sử dụng map hoặc filter
+array = [1,5,7,8,9,15]
+// a.	 in ra các số chẵn trong mảng
+        let evennumber = array.filter(function(elemen, index, arr) {
+            return elemen % 2 == false;
+        }
+        );
+        console.log(`Số chẵn trong mảng là:${evennumber}`);
+// b.	 in ra các số lẻ  trong mảng
+let odd = array.filter(function(elemen){
+    return elemen % 2 == true;
+});
+console.log(`Số lẻ trong mảng là:${odd}`);
+// c.	in ra các số lớn hơn hoặc bằng 5 trong mảng
+let biggernumber5 = array.filter(function(elemen){
+    return elemen >= 5;
+});
+console.log(`Các số lớn hơn hoặc bằng 5 trong mảng là:${biggernumber5}`);
+// d.	in ra các số chia hết cho 5 trong mảng
+let divisiblenumber = array.filter(function(elemen){
+    return elemen % 5 == 0;
+});
+console.log(`Các số chia hết cho 5 trong mảng là:${divisiblenumber}`);
+
+// e.	 Tìm các số > 5 của mảng và tăng các giá trị đó lên 1 đơn đơn vị
+let findnumber = array.filter(function(elemen){
+    if (elemen > 5){
+        return elemen + 1
+    }
+});
+console.log(`Các số lớn hơn 5 được cộng thêm 1 đơn vị :${findnumber}`); // không được
+//dùng map : nếu bỏ esle thì nó cứ in ra thừa 2 dấy phẩy, làm thế nào nhỉ.
+let findnumber1 = array.map(function(elemen){
+    if (elemen > 5){
+        return elemen +1 }
+        else {
+            return elemen;
+        }
+        });
+console.log(`Các số lớn hơn 5 được cộng thêm 1 đơn vị :${findnumber1}`)
+// f.	dùng slice để copy mảng từ phần tử số 3 đến phần tử cuối cùng
+        let newarr = array.slice(3)
+        console.log(newarr);
+// g.	.splice để xóa 1 phần tử trong mảng (ý là xóa ngẫu nhiên hay gì)
+        let deleteelm = array.slice(1)
+        console.log(deleteelm);
+// h.	.push thêm 1 phần tử vào cuối mảng (Thêm string 1)
+        array.push("1")
+        console.log(array);
+
+// * dùng vòng for tăng kết quả của các phần tử array lên 2 lần, kết quả sẽ là mảng sau [2,10,14,16,18,30]

@@ -12,4 +12,12 @@ console.log(newPersons);
 // b) Đổi {firstname : "Trần", lastname: "Huy"}  thành {firstname : "Nguyễn", lastname: "Hoàng"}.
 newPersons.splice(1,1,{firstname : "Nguyễn", lastname: "Hoàng"}); // không nên dùng index là số 1 như kia, có cách nào ko?
 console.log(newPersons);
-// c ) Áp dụng map thêm key address:"Hà Nội"  vào mỗi value của array persons
+// c ) Áp dụng map thêm key address:"Hà Nội"  vào mỗi value của array personsfunction keyadd(themkeyadd) {
+   return {
+    firstname: themkeyadd.firstname,
+    lastname: themkeyadd.lastname,
+    address: "Hà nội"
+   };
+}
+let ketqua = newPersons.map(keyadd);
+console.log(ketqua);
