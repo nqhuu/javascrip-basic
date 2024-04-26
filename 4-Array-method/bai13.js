@@ -1,12 +1,12 @@
 // Bài  13:    
-var hoaQua = [
-    { ten: 'Xoài', sx: 'China', sl: '100' },
-    { ten: 'Xoài', sx: 'VietNam', sl: '130' },
-    { ten: 'Xoài', sx: 'ThaiLan', sl: '100' },
-    { ten: 'Cam', sx: 'China', sl: '200' },
-    { ten: 'Cam', sx: 'ThaiLan', sl: '150' },
-    { ten: 'Nho', sx: 'VietNam', sl: '120' },
-    { ten: 'Xoài', sx: 'ThaiLan', sl: '100' },
+let hoaQua = [
+    { ten: 'Xoài', sx: 'Trung Quốc', sl: '100' },
+    { ten: 'Xoài', sx: 'Việt Nam', sl: '130' },
+    { ten: 'Xoài', sx: 'Thái Lan', sl: '100' },
+    { ten: 'Cam', sx: 'Trung Quốc', sl: '200' },
+    { ten: 'Cam', sx: 'Thái Lan', sl: '150' },
+    { ten: 'Nho', sx: 'Việt Nam', sl: '120' },
+    { ten: 'Xoài', sx: 'Thái Lan', sl: '100' },
 ]
 // a.	Áp dụng filter lọc các trái cây có nơi sản xuất tại VietNam . 
 
@@ -50,11 +50,16 @@ let findName = (name, fruit) => {
 }
 let input = prompt('tìm hoa quả').trim().toUpperCase()
 let showFruit = findName(input, hoaQua);
-console.log(`${showFruit}`);
-// if (showFruit.length !== 0) {
-//     Object.keys(showFruit).forEach(element => {
-//         console.log(`sản xuất tại: ${element.sx}, số lượng trong kho: ${element.sl} `)
-//     });
-// };
+if(typeof showFruit[0] === 'string'){
+    console.log(...showFruit);
+
+} else {
+     console.log(`Đây là danh sách các loại ${showFruit[0].ten} có sãn trong kho`)
+     showFruit.forEach(element => {
+        console.log(`${element.sx}, số lượng ${element.sl}`)
+    });    
+}
+
+
 
 // d.	Viết function lọc sản phẩm hoa quả  theo Nước .   
