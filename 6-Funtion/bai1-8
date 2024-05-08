@@ -1,0 +1,28 @@
+Bài 1: Viết function có đầu vào là 1 array chứa các số
+a.	Function trả ra tổng các phần tử trong array
+b.	Function trả ra tích các phần tử trong array
+
+Bài 2: Viết function có đầu vào là 1 array chứa các số
+a.	Function trả ra số lớn nhất trong array 
+b.	Function trả ra số bé nhất trong array 
+
+Bài 3: Viết function có đầu vào là 1 array
+	Function trả ra array mới với thứ tự ngược lại với array ban đầu
+
+Bài 4: Viết function có đầu vào là số number và 1 array chứa số
+	Function trả ra số lần number lặp lại trong array
+
+Bài 5: Viết function có đầu vào là 1 string
+	function trả ra string mới sau khi đã loại bỏ khoảng trống thừa ở đầu và ở cuối string
+	ví dụ:
+string = ‘     hello mọi người     ‘  => newString = ‘hello mọi người’
+
+Bài 6: Viết function có đầu vào là 1 string
+	Thay thế tất cả dấu cách ‘ ‘ trong string bằng dấu ‘-‘ và trả ra string mới
+	VD 20 05 2015 => 20-05-2015
+
+Bài 7: Viết function có đầu vào là 1 array
+Function trả ra đoạn string chứa các giá trị bên trong array đầu vào
+
+Bài 8: Viết function có đầu vào là 1 array chứa các số
+	Function trả ra số lớn nhất trong array  
