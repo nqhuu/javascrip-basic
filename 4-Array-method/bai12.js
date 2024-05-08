@@ -31,3 +31,6 @@ let array3 = array1.filter(function(item){
     return item >5 & (item + 2)%3 === 0;
 })
 console.log(array3);
+
+
+//

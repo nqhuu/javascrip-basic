@@ -34,3 +34,5 @@ console.log('Các giá trị lẻ và  lớn hơn 3 là:',newArray2);
 //     } 
 // }
 // console.log(newArray2);
+
+//

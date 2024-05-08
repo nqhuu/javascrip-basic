@@ -11,3 +11,6 @@ data.forEach(function(value){
 for(var num in frequency){
     console.log(`Số ${num} xuất hiện ${frequency[num]} lần`);
 }
+
+
+//

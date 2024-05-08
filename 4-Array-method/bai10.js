@@ -12,3 +12,4 @@ console.table(array2);
 // d.	Hãy in ra các giá trị tại vị trí từ thứ 3 đến thứ 7 của array
 console.log(`Gía trị tại vị trí thứ 3 là: ${array2[3]}`);
 console.log(`Gía trị tại vị trí thứ 7 là: ${array2[7]}`);
+//

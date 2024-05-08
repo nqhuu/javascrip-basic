@@ -84,3 +84,5 @@ let ketQuaLocNuoc = locTheoNuoc(sx);
 console.table(`Các sản phẩm được sản xuất tại ${sx} là:`);
 console.table(ketQuaLocNuoc);
 
+
+//

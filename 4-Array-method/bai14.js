@@ -35,3 +35,5 @@ function isPrime(num){ //Kiểm tra xem từng số có phải là số nguyên 
 }
 const primeNumber = number.filter((num) =>isPrime(num));
 console.log('Các số nguyên tố trong danh sách:',primeNumber);
+
+//
